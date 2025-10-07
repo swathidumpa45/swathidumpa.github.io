@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
-        /* Custom Styles for Enhanced UI */
+        
         .gradient-bg {
             background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
         }
@@ -53,7 +53,7 @@
             background: linear-gradient(to right, #10B981, #34D399);
             transform: scale(1.05);
         }
-        /* Interactive Underline Effect for Contact Links */
+        
         .contact-link {
             position: relative;
             transition: color 0.3s ease;
@@ -71,7 +71,7 @@
         .contact-link:hover::after {
             width: 100%;
         }
-        /* Custom Scrollbar */
+        
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -102,11 +102,11 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    
     <section id="home" class="gradient-bg text-white py-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 hero-text animate__animated animate__bounceIn">Welcome to My Portfolio</h2>
-            <p class="text-xl md:text-2xl mb-10 hero-text animate__animated animate__fadeInUp animate__delay-1s">Crafting vibrant, user-focused solutions with a splash of creativity.</p>
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 hero-text animate__animated animate__bounceIn">Design. Code. Create.</h2>
+            <p class="text-xl md:text-2xl mb-10 hero-text animate__animated animate__fadeInUp animate__delay-1s">Turning ideas into experiences — where design meets purpose and code meets creativity.</p>
             <a href="#projects" class="btn-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover-scale shadow-lg">Discover My Work</a>
         </div>
     </section>
@@ -159,6 +159,15 @@
                         <a href="https://github.com/swathidumpa45/ArchViz" target="_blank" class="btn-project text-white px-6 py-2 rounded-full font-medium hover-scale">View Project</a>
                     </div>
                 </div>
+                <!-- Project 4 -->
+                <div class="project-card rounded-2xl overflow-hidden animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="StoreFriend.jpg" alt="Project 4" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-900">StoreFriend</h3>
+                        <p class="text-gray-600 mb-4">The Store Friend app is a customer engagement platform designed for sellers, enabling them to send personalized greetings, and download sales report.</p>
+                        <a href="https://github.com/swathidumpa45/StoreFriend" target="_blank" class="btn-project text-white px-6 py-2 rounded-full font-medium hover-scale">View Project</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -182,10 +191,8 @@
             <p class="text-lg font-medium">© 2024 [D.Swathi]. Built with Passion.</p>
         </div>
     </footer>
-
-    <!-- Scripts -->
     <script>
-        // Smooth Scroll
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -194,8 +201,6 @@
                 });
             });
         });
-
-        // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
